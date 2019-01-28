@@ -45,4 +45,25 @@ $(function() {
 		});
 	});
 	
+	var ctx = $("#myChart");
+	var densityData = {
+	  data: [0, 20, 40, 60, 70,],
+	  backgroundColor: [
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(54, 162, 235, 0.6)'
+      ]
+	};
+
+	var barChart = new Chart(ctx, {
+	  type: 'bar',
+	  data: {
+		labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "N/A"],
+		datasets: [densityData]
+	  }
+	});
+	
 });

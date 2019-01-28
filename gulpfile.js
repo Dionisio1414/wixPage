@@ -39,6 +39,7 @@ gulp.task('js', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/select/bootstrap-select.min.js',
 		'app/libs/chart/jquery.DonutWidget.min.js',
+		'app/libs/chartjs/chart.min.js',
 		'app/js/common.js' // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
