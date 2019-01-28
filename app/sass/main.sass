@@ -1,0 +1,817 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: rgba(69, 57, 57, 0.5)
+
+::selection
+	background-color: #434343
+	color: #fff
+
+a
+	outline: none
+html
+	overflow-x: hidden
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: #000
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&:focus
+		text-decoration: none
+	&:active
+		text-decoration: none		
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.clearfix::after
+	content: ""
+	clear: both
+	display: table
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right	
+
+.text-left
+	text-align: left
+
+b, strong
+	font-weight: bold
+
+
+.bb
+	border-bottom: 1px solid #C7C7C7
+	
+header
+	padding-top: 30px
+	padding-bottom: 15px
+	.logo
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		margin-bottom: 15px
+		p
+			font-family: Helvetica, sans-serif
+			font-size: 20px
+			letter-spacing: 1px
+			line-height: 20px
+			margin-top: 8px
+			color: #434343
+			b
+				font-size: 24px
+				letter-spacing: 3px
+		img
+			width: 58px
+			height: 58px
+			object-fit: cover
+			margin-right: 10px
+	.log-in
+		margin-top: 15px
+		.login-image
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			svg
+				width: 35px
+				height: 35px
+		.login-link
+			display: inline-block
+			font-size: 14px
+			vertical-align: middle
+			color: #7FCCF7
+			&:hover
+				color: #BEE5FB	
+
+// login & registration popup
+
+.modal-form
+	display: none
+	position: fixed
+	top:  0
+	right: 0
+	bottom: 0
+	left: 0
+	background-color: #fff
+	visibility: visible
+	overflow: hidden
+	z-index: 40
+	.modal-close
+		position: absolute
+		top: 60px
+		right: 65px
+		cursor: pointer
+		svg
+			width: 26px
+			height: 26px
+	.modal-contents
+		margin-top: 295px
+		h1
+			font-family: "ProximaNovaRegular", sans-serif
+			font-size: 56px
+			line-height: .8em
+			text-align: center
+			margin-top: 20px
+			margin-bottom: 85px
+			color: #414141
+		form
+			width: 450px
+			margin: 0 auto
+			.form-group
+				margin-bottom: 2rem
+				input
+					background-color: transparent
+					border: 1px solid #c7c7c7
+					border-radius: 0
+					-webkit-appearance: none
+					font-family: Helvetica
+					font-size: 14px
+					line-height: 14px
+					font-weight: 300
+					text-align: left
+					padding: 22px 12px
+					box-shadow: none
+					color: #414141
+					&::placeholder
+						color: #414141
+			.forgot-password
+				font-family: Helvetica, sans-serif
+				font-size: 14px
+				font-weight: bold
+				text-decoration: underline
+				color: #414141
+			input[type="checkbox"]
+					position: absolute
+					z-index: -1
+					opacity: 0
+					margin: 10px 0 0 20px
+			input[type="checkbox"] + label
+					font-family: Helvetiva, sans-serif
+					font-size: 14px
+					font-weight: normal
+					cursor: pointer
+			input[type="checkbox"] + label::before
+					content: ''
+					display: inline-block
+					width: 20px
+					height: 20px
+					background-color: transparent
+					background-image: url(../img/check-mark-black-outline.svg)
+					background-repeat: no-repeat
+					background-size: 10px 10px
+					background-position: -6px -6px
+					border: 1px solid #e2e2e2
+					vertical-align: top
+					margin-right: 10px
+			input[type="checkbox"]:checked + label::before
+					background-position: center center
+			button
+				background-color: #7FCCF7
+				border: none
+				outline: none
+				font-weight: 300
+				font-size: 14px
+				line-height: 44px
+				padding: 0
+				margin-top: 17px
+				width: 100%
+				color: #fff
+				transition: all .35s ease-in-out
+				&:hover
+					background-color: #BEE5FB
+			.sign-up,
+			.log-in
+				display: inline-block
+				margin-top: 24px
+				font-family: Helvetica, sans-serif
+				font-size: 14px
+				color: #414141
+				a
+					font-weight: bold
+					color: #414141
+	&.reset-password
+		h1
+			font-size: 48px
+			margin-bottom: 30px
+		.desc
+			font-family: Helvetica, sans-serif
+			font-size: 16px
+			font-weight: 300
+			text-align: center
+			margin-bottom: 80px
+			color: #414141
+
+// end login & registration popup
+
+	
+.main-caption
+	font-family: Helvetica, sans-serif	
+	text-align: center
+	font-size: 46px
+	color: #414141
+	letter-spacing: 2px
+	margin-top: 25px
+	margin-bottom: 50px
+.subcaption
+	font-family: Helvetica, sans-serif
+	font-size: 16px
+	color: #414141
+	text-align: center
+	border-top: 1px solid #C7C7C7
+	border-bottom: 1px solid #C7C7C7
+	padding: 10px 60px
+	width: 90%
+	margin: 0 auto
+	margin-bottom: 55px
+.top-card
+	margin-bottom: 15px
+	img
+		width: 90px
+		height: 90px
+		display: inline-block
+		margin-right: 10px
+		margin-left: 60px
+	p
+		font-family: Helvetica, sans-serif
+		font-size: 22px
+		display: inline-block
+		letter-spacing: 2px
+		vertical-align: middle
+		margin-bottom: 0
+		span
+			font-size: 36px
+			font-weight: bold
+	.description
+		display: inline-block
+		font-size: 14px
+		font-weight: 200
+		margin-left: 70px
+		margin-top: 20px
+
+.m-a
+	margin: 0 auto
+.w-95
+	width: 95%
+.br
+	border-right: 1px solid #c7c7c7
+
+.normal.donut-widget span.donut-filling
+	display: none
+.cards
+	.chart-caption
+		font-family: Helvetica
+		font-weight: 500
+		font-size: 25px
+		text-align: center
+		margin-bottom: 15px
+	.chart-card.inizialization
+		margin: 0 auto
+		> div
+			margin: 0 auto
+	.chart-info
+		margin-top: 20px
+		.capt
+			font-family: Helvetica
+			font-weight: bold
+			color: #101F4A
+			line-height: 18px
+			text-align: right
+		.perc
+			font-family: Helvetica
+			font-weight: bold
+			color: #101F4A
+			line-height: 18px
+			text-align: right
+		.capt.right,
+		.perc.right
+			text-align: left
+			border-left: 1px solid #101F4A
+			padding-left: 15px
+			color: #7FCCF7
+		.capt.left,
+		.perc.left
+			padding-right: 15px
+	.chart-switch
+		margin-top: 20px
+		.check
+			display: block
+			margin: 0
+			padding: 0
+			width: 0
+			height: 0
+			visibility: hidden
+			opacity: 0
+			pointer-events: none
+			&:checked + .checkToggle
+				background-color: #101F1A
+			&:checked + .checkToggle::after
+				left: 100%
+				transform: translate(calc(-100% - 5px), -50%)
+		.checkToggle
+			position: relative
+			display: block
+			font-size: 0
+			width: 48px
+			height: 30px
+			background-color: #101F4A
+			border-radius: 17px
+			cursor: pointer
+			&::after
+				content: " "
+				display: block
+				position: absolute
+				top: 50%
+				left: 0
+				transform: translate(5px, -50%)
+				width: 20px
+				height: 20px
+				background-color: #60B6D7
+				border-radius: 50%
+				transition: all 300ms ease, transform 300ms ease
+			&:hover::after
+				background-color: rgba(190, 229, 251, 1)
+
+
+.br-table
+	&:after
+		content: ""
+		width: 1px
+		height: 65px
+		background-color: #C7C7C7
+		position: absolute
+		right: 0
+		top: 10px
+
+.table-section
+	margin-top: 30px
+	width: 65%	
+	margin: 0 auto
+	margin-bottom: 100px
+	.table
+		border-bottom: 1px solid #C7C7C7
+		margin-bottom: 80px
+		margin-top: 30px
+		.caption
+			font-family: Helvetica
+			font-weight: 600
+			text-align: center
+			color: #1F3A6C
+			img
+				float: left
+				width: 15px
+				margin-top: 2px
+				margin-left: 10px
+		.name
+			font-family: Helvetica
+			font-weight: 700
+			font-size: 20px
+			color: #1F3A6C 
+			letter-spacing: 1px
+		.team
+			font-family: Helvetica
+			font-weight: 700
+			font-size: 15px
+			margin-bottom: 0
+			color: #1F3A6C
+			span
+				font-weight: 500
+				color: #545454
+		thead
+			th
+				&:last-child
+					color: #545454
+		tbody
+			td
+				position: relative
+				.next
+					background-color: #1F3A6C
+					border-radius: 50%
+					padding: 15px
+					margin-right: 12px
+					transition: all .4s ease
+					&:hover
+						background-color: rgb(61, 155, 233)
+					img
+						width: 15px
+				&:first-child
+					width: 20%
+			td:not(:first-child)
+				text-align: center
+				vertical-align: middle
+				color: #828282
+
+.load-more
+	font-family: "WorkSans ExtraLight", sans-serif
+	font-size: 21px
+	line-height: 1.4em
+	background-color: #101F4A
+	text-transform: uppercase
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6)
+	text-align: center
+	color: #e2e2e2
+	padding: 8px 60px
+	transition: all .4s ease
+	&:hover
+		background-color: rgb(61, 155, 233)
+		color: #fff
+				
+// User information page
+.br-table-info
+	&:after
+		content: ""
+		position: absolute
+		right: 0
+		top: 0
+		height: 81%
+		width: 2px
+		background-color: #E3E3E3
+	
+.user-infromation
+	margin-top: 1rem
+	a.back-to-list
+		font-family: "HelveticaLight", sans-serif
+		font-size: 14px
+		letter-spacing: .5px
+		margin-left: 24%
+		color: #414141
+		transition: color 0.4s ease 0s
+		&:hover
+			color: #A6A6A4
+	.navigation
+		padding: 0
+		margin: 0
+		list-style-type: none
+		margin-right: 24%
+		li
+			position: relative
+			display: inline-block
+			background-color: #ccc
+			border-radius: 50%
+			height: 32px
+			width: 32px
+			box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2)
+			cursor: pointer
+			span
+				position: absolute
+				top: 15%
+				left: 50%
+				transform: translate(-50%)
+				color: #fff
+			&.prev
+				margin-right: 45px
+	.user-information
+		margin-left: 12%
+		margin-top: 27px
+		margin-bottom: 97px
+		h3
+			font-size: 30px
+			font-weight: bold
+		p
+			font-size: 18px
+			span
+				font-weight: bold
+	.table-container
+		position: relative
+		margin-left: 20%
+		&::after
+			content: ""
+			width: 2px
+			height: 100%
+			position: absolute
+			top: 0
+			right: -60px
+			background-color: #E3E3E3
+		h4
+			font-family: Helvetica, sans-serif
+			font-size: 18px
+			font-weight: bold
+			border-bottom: 1px solid #E3E3E3
+			padding-bottom: 5px
+			margin-bottom: 10px
+			color: #414141
+			span
+				font-size: 14px
+				font-weight: normal
+				float: right
+		h5
+			font-family: Helvetica, sans-serif
+			font-size: 18px
+			font-weight: bold
+			color: #414141
+			+ p
+				font-size: 14px
+		.row
+			&:nth-child(2)
+				margin-bottom: 70px
+			&:nth-child(3)
+				h4:first-child
+					margin-bottom: 45px
+	.stats-container
+		margin-left: 25%
+		h4
+			font-family: Helvetica, sans-serif
+			font-size: 18px
+			font-weight: bold
+			padding-bottom: 5px
+			margin-bottom: 40px
+			color: #414141	
+		h5
+			font-family: Helvetica, sans-serif
+			font-size: 14px
+			font-weight: bold
+			padding-bottom: 5px
+			margin-bottom: 15px
+			color: #414141	
+		.desc
+			margin-bottom: 60px
+			&:last-child
+				margin-bottom: 0
+		
+
+// End user information page
+
+
+// section inner page
+.br-col
+	border-right: 1px solid #424242
+.bb-col
+	border-bottom: 1px solid #424242
+.br-col-grey
+	border-right: 1px solid #C7C7C7
+	
+section
+	.navigation-images
+		a
+			margin-right: 30px
+			img
+				width: 55px
+
+.card-inner
+	h1
+		font-size: 53px
+		text-align: center
+		margin-top: 98px
+		margin-bottom: 57px
+		color: #414141
+	.leadership-table
+		position: relative
+		border: 2px solid #424242
+		padding: 54px 20px
+		padding-top: 44px
+		margin: 0 auto
+		margin-bottom: 152px
+		width: 75%
+		ul
+			padding: 0
+			margin: 0
+			list-style-type: none
+			li
+				font-size: 15px
+				text-align: center
+				line-height: 1.2em
+		.tl-block,
+		.tr-block,
+		.bl-block,
+		.br-block
+			background-color: #fff
+			position: absolute
+			line-height: 25px
+			padding: 10px
+			p
+				font-family: Helvetica, sans-serif
+				font-size: 24px
+				margin-bottom: 0
+				color: #414141
+		.tl-block
+			left: -5px
+			top: -15px
+		.tr-block
+			top: -15px
+			right: -5px
+		.bl-block
+			bottom: -15px
+			left: -5px		
+		.br-block
+			bottom: -15px
+			right: -5px
+	
+// end section inner page
+
+
+// section perfomance chart
+
+.perfomance-chart
+	h1
+		font-size: 53px
+		text-align: center
+		margin-top: 98px
+		margin-bottom: 57px
+		color: #414141
+	.perfomance-table
+		position: relative
+		width: 65%
+		margin: 0 auto
+		h4
+			font-size: 20px
+			line-height: 1.4em
+			text-align: center
+			margin-bottom: 0
+			white-space: nowrap
+		p
+			font-size: 20px
+			line-height: 1.4em
+			text-align: center
+			margin-bottom: 3rem
+		ul
+			position: relative
+			padding: 0
+			margin: 0
+			list-style-type: none
+			padding-top: 30px
+			li
+				font-size: 15px
+				text-align: center
+				line-height: 1.2em
+			&::before
+				content: ""
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translate(-50%)
+				height: 1px
+				width: 50%
+				background-color: #C7C7C7
+		.tl-br
+			position: absolute
+			top: -25px
+			right: -25px
+			width: 75px
+			height: 75px
+			&::before
+				content: ""
+				position: absolute
+				width: 100%
+				height: 2px
+				background-color: #c7c7c7
+			&::after
+				content: ""
+				position: absolute
+				top: 0
+				right: 0
+				width: 2px
+				height: 100%
+				background-color: #c7c7c7
+		.tr-br
+			position: absolute
+			top: -25px
+			left: -25px
+			width: 75px
+			height: 75px
+			&::before
+				content: ""
+				position: absolute
+				width: 100%
+				height: 2px
+				background-color: #c7c7c7
+			&::after
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				width: 2px
+				height: 100%
+				background-color: #c7c7c7
+		.btr-br
+			position: absolute
+			bottom: -25px
+			right: -25px
+			width: 75px
+			height: 75px
+			&::before
+				content: ""
+				position: absolute
+				width: 2px
+				right: 0
+				height: 100%
+				background-color: #c7c7c7
+			&::after
+				content: ""
+				position: absolute
+				bottom: 0
+				right: 0
+				height: 2px
+				width: 100%
+				background-color: #c7c7c7
+		.btl-br
+			position: absolute
+			bottom: -25px
+			left: -25px
+			width: 75px
+			height: 75px
+			&::before
+				content: ""
+				position: absolute
+				width: 2px
+				left: 0
+				height: 100%
+				background-color: #c7c7c7
+			&::after
+				content: ""
+				position: absolute
+				bottom: 0
+				right: 0
+				height: 2px
+				width: 100%
+				background-color: #c7c7c7
+	
+// end section perfomance chart
+
+
+// synthesis score
+
+.synthesis-score
+	h1
+		font-size: 53px
+		text-align: center
+		margin-top: 98px
+		margin-bottom: 57px
+		color: #414141
+	.card-item
+		h2
+			font-family: Helvetica, sans-serif
+			font-size: 20px
+			text-align: center
+			margin-bottom: 20px
+			color: #414141
+		.image-container
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			margin-bottom: 20px
+			img
+				width: 120px
+				height: 120px
+		.main-desc,
+		.sub-desc
+			text-align: center
+			color: #414141
+		.main-desc
+			font-size: 27px
+			font-weight: bold
+			letter-spacing: 2px
+		.sub-desc
+			font-size: 15px
+			letter-spacing: 1px
+	.figure
+		display: inline-block
+		font-family: "WorkSans Light", sans-serif
+		font-weight: 100
+		font-size: 450px
+		line-height: 230px
+		transform: rotate(90deg)
+	.score-block
+		img
+			width: 75px
+			margin-right: 20px
+		p
+			font-size: 32px
+			span
+				font-size: 53px
+				font-weight: bold
+	.note
+		font-size: 25px
+		text-align: center
+		margin-top: 50px
+		color: #414141
+	
+// end synthesis score
+
+@import "media" // Always at the end

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>User information</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+<!--	<meta property="og:image" content="path/to/image.jpg">-->
+	<meta name="format-detection" content="telephone=no">
+<!--	<link rel="icon" href="img/favicon/favicon.ico">-->
+<!--	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">-->
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#CCB6A6">
+	<!-- Custom Browsers Color End -->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no">
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<!-- Login popup -->
+	<div class="modal-form login-modal">
+		<span class="modal-close">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+				<g>
+					<g>
+						<path d="M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249
+							C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306
+							C514.019,27.23,514.019,14.135,505.943,6.058z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636
+							c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z"/>
+					</g>
+				</g>
+			</svg>
+		</span>
+		<div class="modal-contents">
+			<h1>Log in</h1>
+			<form action="" method="">
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Email">
+			  	</div>				
+			  	<div class="form-group">
+					<input type="password" class="form-control" id="password" placeholder="Password">
+			  	</div>
+			  	<div class="row">
+			  		<div class="col-6">
+			  			<input type="checkbox" name="remember" id="remember">
+			  			<label for="remember">Remember me</label> 
+			  		</div>
+			  		<div class="col-6 d-flex justify-content-end">
+			  			<a href="#" class="forgot-password">Forgot password?</a>
+			  		</div>
+			  	</div>
+				<button type="submit">Log In</button>
+				<div class="row">
+					<div class="col d-flex justify-content-center">
+						<span class="sign-up">Don't have an account? <a href="#">Sign Up</a></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- End login popup -->
+	
+	<!-- Sign up -->
+	
+	<div class="modal-form sign-in-modal">
+		<span class="modal-close">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+				<g>
+					<g>
+						<path d="M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249
+							C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306
+							C514.019,27.23,514.019,14.135,505.943,6.058z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636
+							c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z"/>
+					</g>
+				</g>
+			</svg>
+		</span>
+		<div class="modal-contents">
+			<h1>Sign in</h1>
+			<form action="" method="">
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Email">
+			  	</div>				
+			  	<div class="form-group">
+					<input type="password" class="form-control" id="password" placeholder="Password">
+			  	</div>			  	
+			  	<div class="form-group">
+					<input type="retypePassword" class="form-control" id="retypePassword" placeholder="Retype password">
+			  	</div>
+				<button type="submit">Go</button>
+				<div class="row">
+					<div class="col d-flex justify-content-center">
+						<span class="log-in">Already a member? <a href="#">Log in</a></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<!-- End sign up -->
+	
+	<!-- Reset password  -->
+	
+	<div class="modal-form reset-password">
+		<span class="modal-close">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+				<g>
+					<g>
+						<path d="M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249
+							C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306
+							C514.019,27.23,514.019,14.135,505.943,6.058z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636
+							c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z"/>
+					</g>
+				</g>
+			</svg>
+		</span>
+		<div class="modal-contents">
+			<h1>Reset Password</h1>
+			<p class="desc">Please enter your email address</p>
+			<form action="" method="">
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Email">
+			  	</div>				
+				<button type="submit">Go</button>
+			</form>
+		</div>
+	</div>
+	
+	<!-- End reset password -->
+	
+	<header>
+		<div class="container bb p-0">
+			<div class="row">
+				<div class="col-6">
+					<div class="logo">
+						<img src="img/logo.webp" alt="">
+						<p>
+							Synthesis<br/>
+							<b>SCALE</b>
+						</p>
+					</div>
+				</div>
+				<div class="col-6 d-flex justify-content-end">
+					<div class="log-in">
+						<div class="login-image">
+							<svg data-type="shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="img" preserveAspectRatio="xMidYMid meet" fill="#7FCCF7">
+								<g>
+									<path d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"></path>
+								</g>
+							</svg>
+						</div>
+						<a href="#" class="login-link">
+							Log In
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section class="user-infromation">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<a href="index.html" class="back-to-list">
+						 < Back to list
+					</a>	
+				</div>
+				<div class="col-6 d-flex justify-content-end">
+					<ul class="navigation">
+						<li class="prev">
+							<span><</span>
+						</li>
+						<li class="next">
+							<span>></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="user-information">
+						<h3 class="user-name">
+							Aaron F
+						</h3>
+						<p class="user-pos">
+							<span>Team</span> IT
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 p-0">
+					<div class="table-container">
+						<div class="row">
+							<div class="col">
+								<h4>Predicted Leadership Potential</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-2">
+								<h5>Risk</h5>
+								<p class="desc">Hi</p>
+							</div>
+							<div class="col-2 br-table-info">
+								<h5>Reward</h5>
+								<p class="desc">Hi</p>
+							</div>
+							<div class="col">
+								<h5>Self Awareness</h5>
+								<p class="desc">Hi</p>
+							</div>
+							<div class="col">
+								<h5>Communication</h5>
+								<p class="desc">Hi</p>
+							</div>
+							<div class="col">
+								<h5>Ambiguity</h5>
+								<p class="desc">Hi</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<h4>Predicted Performance
+									<span>ME (3)</span>
+								</h4>
+								<h4>Dealle's Performance rating
+									<span>ME (3)</span>
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 p-0">
+					<div class="stats-container">
+						<h4>Stats</h4>
+						<div class="desc">
+							<h5>Leadership Potential</h5>
+							<p>Top 20%</p>
+						</div>
+						<div class="desc">
+							<h5>Performance</h5>
+							<p>Top 40%</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
