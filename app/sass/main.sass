@@ -327,7 +327,7 @@ header
 			visibility: hidden
 			opacity: 0
 			pointer-events: none
-			&:checked + .checkToggle
+			//&:checked + .checkToggle
 				background-color: #101F1A
 			//&:checked + .checkToggle::after
 				left: 100%
@@ -362,12 +362,18 @@ header
 				left: 100%
 				transform: translate(calc(-100% - 5px), -50%)
 				background-color: #BADA55
+			&:hover::after
+				background-color: rgba(190, 229, 251, 1)
 		.checkToggle[data-right="left"]
 			&::after
 				background-color: #E21C21
+			&:hover::after
+				background-color: rgba(190, 229, 251, 1)
 		.checkToggle[data-center="center"]
 			&::after
 				transform: translate(67%, -50%)
+			&:hover::after
+				background-color: rgba(190, 229, 251, 1)
 
 .br-table
 	&:after
