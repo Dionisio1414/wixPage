@@ -1,10 +1,23 @@
 @media only screen and (max-width: 1600px)
 	.table-section
 		width: 75%
+
+	// perfomance chart
+
+	.perfomance-chart 
+		.perfomance-table
+			width: 81%
 	
 @media only screen and (max-width: 1440px)
 	.table-section
 		width: 85%
+
+	// perfomance chart
+
+	.perfomance-chart 
+		.perfomance-table
+			width: 90%
+	
 	
 	
 @media only screen and (max-width: 1366px) 
@@ -20,6 +33,20 @@
 				margin-left: 48px
 	.table-section
 		width: 90%
+
+	// navigate links
+	section 
+		.navigation-images 
+			a
+				&:first-child
+					margin-left: 44px
+	
+	// nexus rate
+
+	.nexus-rate
+		.wrapper
+			width: 90%
+			margin: 0 auto
 
 @media only screen and (max-width: 1200px) 
 	.cards 
@@ -65,8 +92,73 @@
 		font-size: 18px
 	.br-table:after
 		height: 52px
-		
+
+
+	// navigate links
+
+	section 
+		.navigation-images 
+			a:first-child
+				margin-left: 0
+
+	// card inner
+
+	.card-inner 
+		.leadership-table
+			width: 95%
+
+	// performance chart
+
+	.perfomance-chart 
+		h1
+			font-size: 40px
+		.perfomance-table 
+			ul
+				margin-bottom: 2rem
+			.row
+				.col-xl:nth-child(3)
+					border-right: none
+	
+	// user information
+
+	.user-infromation 
+		.user-information
+			margin-left: 3%
+		.table-container
+			margin-left: 6%
+			h5
+				font-size: 16px
+				white-space: nowrap
+		a.back-to-list
+			margin-left: 6%
+		.navigation
+			margin-right: 4%
+
+
+	// nexus rate
+
+	.nexus-rate
+		.wrapper
+			width: 100%
+		h4
+			font-size: 18px
+			+ p
+				font-size: 21px
+		ul
+			li
+				font-size: 14px
+		.main-container 
+			ul 
+				li
+					font-size: 18px
+	
+
 @media only screen and (max-width: 992px)
+	
+	header
+		padding-left: 30px
+		padding-right: 30px
+	
 	.main-caption
 		font-size: 36px
 	.table-section
@@ -97,8 +189,154 @@
 	.load-more
 		font-size: 16px
 	
+	// card inner
+
+	.card-inner 
+		//.container
+			max-width: 100%
+		h1
+			font-size: 44px
+		.leadership-table
+			width: 90%
+			ul
+				li
+					font-size: 13px
+			.bl-block, 
+			.br-block, 
+			.tl-block, 
+			.tr-block 
+				p
+					font-size: 21px
 	
+	// performance chart
+
+	.perfomance-chart 
+		h1
+			font-size: 24px
+		.perfomance-table 
+			width: 70%
+			h4
+				font-size: 18px
+			.row
+				.col-xl:nth-child(1),
+				.col-xl:nth-child(2),
+				.col-xl:nth-child(4)
+					border-right: none
+	
+	// user information
+
+	.user-infromation
+		.table-container
+			margin-left: 0
+			margin-bottom: 5rem
+			&::after
+				display: none
+		.user-information
+			margin-left: 0
+		.navigation
+			margin-right: 0
+		.stats-container
+			margin-left: 0
+			.desc
+				display: inline-block
+				margin-right: 5rem
+		a.back-to-list
+			margin-left: 0
+	
+	// nexus rate
+	.nexus-rate
+		h1
+			font-size: 36px
+		.container-list
+			.tl-br
+				&::before
+					width: 80%
+					right: 0
+					height: 2px
+				&::after
+					content: ""
+					position: absolute
+					top: 0
+					right: 0
+					width: 2px
+					height: 80%
+			.tr-br
+				&::before
+					content: ""
+					position: absolute
+					width: 80%
+					height: 2px
+				&::after
+					content: ""
+					position: absolute
+					top: 0
+					left: 0
+					width: 2px
+					height: 80%
+			.btr-br
+				&::before
+					content: ""
+					position: absolute
+					width: 2px
+					right: 0
+					bottom: 0
+					height: 80%
+				&::after
+					content: ""
+					position: absolute
+					bottom: 0
+					right: 0
+					height: 2px
+					width: 80%
+			.btl-br
+				&::before
+					content: ""
+					position: absolute
+					width: 2px
+					left: 0
+					bottom: 0
+					height: 80%
+				&::after
+					content: ""
+					position: absolute
+					bottom: 0
+					right: 0
+					left: 0
+					height: 2px
+					width: 80%
+	
+	// synthesis score
+
+	.synthesis-score 
+		h1
+			font-size: 44px
+		.card-item 
+			.sub-desc
+				font-size: 13px
+				letter-spacing: .5px
+		.figure
+			font-size: 380px
+
+	.time-chart 
+		h2
+			font-size: 26px
+
+	// end synthesis score
+
+
 @media only screen and (max-width: 768px)
+	
+	// modal form's
+
+	.modal-form 
+		.modal-contents 
+			h1
+				font-size: 44px
+	.modal-form.reset-password
+		h1
+			font-size: 44px
+	
+	
 	.br
 		border-right: unset
 	.main-caption
@@ -113,14 +351,322 @@
 	.table-section .table .caption img
 		display: none
 
+	// navigate links
+
+	section 
+		.navigation-images 
+			a 
+				margin-left: 1%
+				img
+					width: 40px
+	
+	
+	// card inner
+
+	.card-inner 
+		//.container
+			max-width: 100%
+		h1
+			font-size: 34px
+		.leadership-table
+			padding-left: 8px
+			padding-right: 8px
+			width: 95%
+			ul
+				li
+					font-size: 12px
+					line-height: 1.5em
+			.bl-block, 
+			.br-block, 
+			.tl-block, 
+			.tr-block 
+				p
+					font-size: 18px
+	
+	// user information 
+	
+	.user-infromation 
+		.user-information 
+			h3
+				font-size: 26px
+			p
+				font-size: 16px
+		.table-container 
+			h4
+				font-size: 16px
+			h5
+				font-size: 14px
+	
+	// synthesis-score
+
+	.synthesis-score 
+		h1
+			font-size: 36px
+		.card-item
+			margin-bottom: 3rem
+		.figure
+			margin-left: 10%
+	.time-chart 
+		h2
+			font-size: 24px
+
+
+	// nexus rate
+
+	.nexus-rate 
+		.container-list
+			margin-bottom: 65%
+			.tl-br
+				top: 0
+				right: 0
+				&::before
+					width: 80%
+					right: 0
+					height: 2px
+				&::after
+					content: ""
+					position: absolute
+					top: 0
+					right: 0
+					width: 2px
+					height: 80%
+			.tr-br
+				top: 0
+				left: 0
+				&::before
+					content: ""
+					position: absolute
+					width: 80%
+					height: 2px
+				&::after
+					content: ""
+					position: absolute
+					top: 0
+					left: 0
+					width: 2px
+					height: 80%
+			.btr-br
+				right: 0
+				bottom: 0
+				&::before
+					content: ""
+					position: absolute
+					width: 2px
+					right: 0
+					bottom: 0
+					height: 80%
+				&::after
+					content: ""
+					position: absolute
+					bottom: 0
+					right: 0
+					height: 2px
+					width: 80%
+			.btl-br
+				left: 0
+				bottom: 0
+				&::before
+					content: ""
+					position: absolute
+					width: 2px
+					left: 0
+					bottom: 0
+					height: 80%
+				&::after
+					content: ""
+					position: absolute
+					bottom: 0
+					right: 0
+					left: 0
+					height: 2px
+					width: 80%
+		.container-list.first 
+			.tl-br
+				right: 0
+				&::after
+					display: block!important
+					content: ""
+					position: absolute
+					top: 0
+					right: 0
+					width: 2px
+					height: 80%
+			.btr-br
+				&::before
+					display: block!important
+		.container-list.third
+			.btl-br
+				&::before
+					display: block!important
+			.tr-br
+				&::after
+					display: block!important
+
 @media only screen and (max-width: 576px) 
+	
+	.modal-form 
+		.modal-contents 
+			form
+				width: 85%
+		.modal-close
+			right: 25px
+			top: 25px
+
 	.table-section .table .name
 		white-space: nowrap
 
+		// card inner
+
+	.card-inner 
+		//.container
+			max-width: 100%
+		h1
+			font-size: 24px
+		.leadership-table
+			.row
+				margin: 0 auto
+				&:first-child
+					.col-12
+						border-right: none
+				&.last
+					.col-12
+						&:first-child
+							border-right: none
+							border-bottom: 1px solid #424242
+	
+	// user information
+
+	.user-infromation 
+		.table-container
+			padding: 0 15px
+		.stats-container
+			padding: 0 15px
+		.user-information
+			margin-bottom: 40px
+		.stats-container 
+			.desc
+				margin-bottom: 20px
+	
+	.perfomance-chart 
+		.perfomance-table
+			margin-bottom: 100px
+
+	// nexus rate
+
+	.nexus-rate 
+		.container-list
+			margin-bottom: 65%
+			.tl-br
+				top: 0
+				right: 0
+				&::before
+					width: 80%
+					right: 0
+					height: 2px
+				&::after
+					content: ""
+					position: absolute
+					top: 0
+					right: 0
+					width: 2px
+					height: 80%
+			.tr-br
+				top: 0
+				left: 0
+				&::before
+					content: ""
+					position: absolute
+					width: 80%
+					height: 2px
+				&::after
+					content: ""
+					position: absolute
+					top: 0
+					left: 0
+					width: 2px
+					height: 80%
+			.btr-br
+				right: 0
+				bottom: 0
+				&::before
+					content: ""
+					position: absolute
+					width: 2px
+					right: 0
+					bottom: 0
+					height: 80%
+				&::after
+					content: ""
+					position: absolute
+					bottom: 0
+					right: 0
+					height: 2px
+					width: 80%
+			.btl-br
+				left: 0
+				bottom: 0
+				&::before
+					content: ""
+					position: absolute
+					width: 2px
+					left: 0
+					bottom: 0
+					height: 80%
+				&::after
+					content: ""
+					position: absolute
+					bottom: 0
+					right: 0
+					left: 0
+					height: 2px
+					width: 80%
+		.container-list.first 
+			.tl-br
+				right: 0
+				&::after
+					display: block!important
+					content: ""
+					position: absolute
+					top: 0
+					right: 0
+					width: 2px
+					height: 80%
+			.btr-br
+				&::before
+					display: block!important
+		.container-list.third
+			.btl-br
+				&::before
+					display: block!important
+			.tr-br
+				&::after
+					display: block!important
+	
+		h4
+			margin-top: 100px
+		.first-caption
+			margin-top: 0
+		.main-container 
+			h4
+				margin-top: 0
+	
+	
+	.synthesis-score 
+		h1
+			font-size: 26px
+		.figure
+			font-size: 270px
+		.card-item
+			margin-bottom: 10rem
+
+	.time-chart 
+		h2
+			font-size: 16px
+
 @media only screen and (max-width: 425px)
 	header
-		padding-left: 0
-		padding-right: 0
+		padding-left: 15px
+		padding-right: 15px
 		.logo
 			img
 				width: 50px
@@ -132,5 +678,51 @@
 					font-size: 18px
 		.log-in
 			margin-top: 11px
+
+	// navigate links
+
+	section 
+		.navigation-images 
+			a
+				margin-right: 14px
+	
+	
+	// nexus rate
+	
+	.nexus-rate 
+		h1
+			font-size: 24px
+
+
+	.card-inner .leadership-table .bl-block p, .card-inner .leadership-table .br-block p, .card-inner .leadership-table .tl-block p, .card-inner .leadership-table .tr-block p
+		font-size: 16px
+
+	.card-inner 
+		h1
+			font-size: 18px
+		.leadership-table 
+			ul 
+				li
+					font-size: 11px			
+		
+	.perfomance-chart 
+		h1
+			font-size: 18px
+		.perfomance-table 
+			h4
+				font-size: 16px
+			p
+				font-size: 18px
+
+@media only screen and (max-width: 375px)
+	
+	.modal-form .modal-contents form input[type=checkbox]+label
+		font-size: 12px
+	.modal-form .modal-contents form .forgot-password
+		font-size: 12px
+		margin-top: 5px
+	.modal-form.reset-password h1
+		font-size: 34px
+	
 	
 	

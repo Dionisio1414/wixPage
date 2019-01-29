@@ -634,7 +634,7 @@ section
 		color: #414141
 	.perfomance-table
 		position: relative
-		width: 65%
+		width: 70%
 		margin: 0 auto
 		h4
 			font-size: 20px
@@ -819,6 +819,7 @@ section
 		text-align: center
 		margin-top: 75px
 		letter-spacing: 1px
+		margin-bottom: 30px
 		color: #414141
 	
 // end synthesis score
@@ -833,6 +834,157 @@ section
 		margin-top: 98px
 		margin-bottom: 57px
 		color: #414141
+	h4
+		position: relative
+		font-size: 20px
+		text-align: center
+		padding-bottom: 15px
+		margin-top: 35px
+		color: #414141
+		+ p
+			font-size: 28px
+			text-align: center
+			color: #414141
+		&::before
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translate(-50%)
+			background-color: #c7c7c7
+			width: 20%
+			height: 1px
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li
+			font-size: 18px
+			text-align: center
+			color: #414141
+	.main-container
+		h4
+			font-size: 28px
+			margin-top: 0
+		ul
+			li
+				font-size: 24px
+	.container-list
+		position: relative
+		height: 80%
+		.tl-br
+			position: absolute
+			top: -25px
+			right: -25px
+			width: 75px
+			height: 75px
+			&::before
+				content: ""
+				position: absolute
+				width: 100%
+				height: 2px
+				background-color: #303030
+			&::after
+				content: ""
+				position: absolute
+				top: 0
+				right: 0
+				width: 2px
+				height: 100%
+				background-color: #303030
+		.tr-br
+			position: absolute
+			top: -25px
+			left: -25px
+			width: 75px
+			height: 75px
+			&::before
+				content: ""
+				position: absolute
+				width: 100%
+				height: 2px
+				background-color: #303030
+			&::after
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				width: 2px
+				height: 100%
+				background-color: #303030
+		.btr-br
+			position: absolute
+			bottom: -25px
+			right: -25px
+			width: 75px
+			height: 75px
+			&::before
+				content: ""
+				position: absolute
+				width: 2px
+				right: 0
+				height: 100%
+				background-color: #303030
+			&::after
+				content: ""
+				position: absolute
+				bottom: 0
+				right: 0
+				height: 2px
+				width: 100%
+				background-color: #303030
+		.btl-br
+			position: absolute
+			bottom: -25px
+			left: -25px
+			width: 75px
+			height: 75px
+			&::before
+				content: ""
+				position: absolute
+				width: 2px
+				left: 0
+				height: 100%
+				background-color: #303030
+			&::after
+				content: ""
+				position: absolute
+				bottom: 0
+				right: 0
+				height: 2px
+				width: 100%
+				background-color: #303030
+	.container-list.first
+		.tl-br
+			right: -7px
+			&::after
+				display: none
+		.btr-br
+			right: -7px
+			&::before
+				display: none
+	.container-list.second
+		.btl-br
+			bottom: -78px
+		.btr-br
+			bottom: -78px
+	.container-list.third
+		.tr-br
+			left: -7px
+			&::after
+				display: none
+		.btl-br
+			left: -7px
+			&::before
+				display: none
+	.container-list.first,
+	.container-list.third
+		ul
+			margin-right: 5rem
+			&:last-child
+				margin-right: 0
+					
+		
 
 // end nexus-rate
 

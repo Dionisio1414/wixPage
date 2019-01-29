@@ -47,6 +47,7 @@ $(function() {
 	
 	var ctx = $("#myChart");
 	var densityData = {
+	  label: '',
 	  data: [0, 20, 40, 60, 70,],
 	  backgroundColor: [
         'rgba(54, 162, 235, 0.6)',
@@ -63,6 +64,11 @@ $(function() {
 	  data: {
 		labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "N/A"],
 		datasets: [densityData]
+	  },
+	  options: {
+		  legend: {
+			  display: false
+		  }
 	  }
 	});
 	
