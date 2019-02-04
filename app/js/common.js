@@ -72,4 +72,16 @@ $(function() {
 	  }
 	});
 	
+	$('.sorting-dropdown .field-container').click(function() {
+		$(this).toggleClass('show');
+		$(this).find('ul').slideToggle();
+	});
+	
+	var $valInput = $('.sorting-dropdown .field-container input');
+	$('.sorting-dropdown .field-container > ul li a').click(function(e) {
+		e.preventDefault();
+		var $valLink = $(this).text();
+		$valInput.val($valLink.trim());
+	});
+	
 });

@@ -453,6 +453,61 @@ header
 			&:hover::after
 				background-color: rgba(190, 229, 251, 1)
 
+	
+.sorting-dropdown	
+	position: relative
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-end
+	margin: 3% 0
+	cursor: pointer
+	.field-container
+		position: relative
+		width: 150px
+		img
+			position: absolute
+			top: 15px
+			right: 15px
+			width: 15px
+			transform: rotate(90deg)
+		&.show
+			img
+				transform: rotate(-90deg)
+		input
+			pointer-events: none
+			border: 2px solid #e2e2e2
+			padding: 8px 0
+			font-size: 13px
+			color: #101F49
+			width: 100%
+			padding-left: 10px
+		ul
+			display: none
+			padding: 0
+			margin: 0
+			list-style-type: none
+			background-color: #fff
+			position: absolute
+			top: 40px
+			z-index: 5
+			border-radius: 2px
+			border: 1px solid #e2e2e2
+			border-top: none
+			width: 100%
+			li
+				padding-left: 10px
+				transition: all .35s ease
+				a
+					font-family: Helvetica, sans-serif
+					font-size: 13px
+					text-decoration: none
+					color: #101F49
+				&:hover
+					background-color: #e2e2e2
+
 .br-table
 	&:after
 		content: ""
