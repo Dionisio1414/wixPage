@@ -2,6 +2,15 @@
 @import "fonts"
 @import "libs"
 
+$cl-primary: #009688
+$cl-state-null: #E21C21
+$cl-state-null-light: #f44336
+$cl-state-null-dark: #8b8b8b
+$cl-state-on: #BADA55
+$cl-state-on-dark: #4caf50
+$cl-state-off: #f9a19a
+$cl-state-off-dark: #60b6d7
+
 ::placeholder
 	color: rgba(69, 57, 57, 0.5)
 
@@ -317,7 +326,76 @@ header
 		.perc.left
 			padding-right: 15px
 	.chart-switch
+		position: relative
+		display: inline-block
 		margin-top: 20px
+		width: max-content
+		margin: 0 auto
+		margin-top: 15px
+		input[type="radio"]
+			position: absolute
+			left: 0
+			top: 0
+			width: 18px
+			height: 18px
+			margin: 0
+			padding: 0
+			opacity: 0
+			& + i
+				position: relative
+				display: inline-block
+				width: 18px
+				height: 18px
+				vertical-align: top
+				&, &:before, &:after
+					transition: all .3s
+			&:first-child
+				z-index: 10
+				&:checked
+					z-index: 0
+			&:checked
+			 	& + input[type="radio"]
+					z-index: 10
+		input[type="radio"]
+			width: 15px
+			height: 15px
+			left: 7px
+			top: 9px
+			z-index: 10
+			& + i
+				width: 48px
+				height: 30px
+				margin-top: 2px
+				background-color: #101f4a
+				border-radius: 17px
+				&::before
+					content: ' '
+					position: absolute
+					top: 5px
+					left: 5px
+					display: block
+					width: 20px
+					height: 20px
+					background-color: $cl-state-null-light
+					border-radius: 50%
+					box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.3)
+			&:checked
+				& + i
+					&::before
+						background-color: $cl-state-on
+						left: 23px
+				& + input[type="radio"]
+					& + i
+						&::before
+							left: 14px
+				& + input[type="radio"]
+					& + i
+						&::before
+							background-color: $cl-state-off-dark
+			&[data-state-null="null"]
+				left: 17px
+			&[data-state-on="on"]
+				left: 25px
 		.check
 			display: block
 			margin: 0
